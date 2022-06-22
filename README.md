@@ -12,6 +12,11 @@ Memories will be a full-stack social media application developed using the MERN 
   <ul>
     <li>import syntax by using "type": "module" in package.json
   </ul>
+  
+<h4>Problems Encountered</h4>
+  <ul>
+    <li> npm start error: problem with dependency tree -> fixed via SKIP_PREFLIGHT_CHECK=true in .env file
+  </ul>
 
 <h4>Improvements to Add</h4>
   <ul>
