@@ -10,7 +10,7 @@ Memories will be a full-stack social media application developed using the MERN 
 
 <h4>Lessons Learned</h4>
   <ul>
-    <li>
+    <li>import syntax by using "type": "module" in package.json
   </ul>
 
 <h4>Improvements to Add</h4>
