@@ -27,7 +27,7 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>import syntax by using "type": "module" in package.json
     <li>Folder structure for cleaner and more scalable application
     <li>New Function: Routes -> Controller (Handle backend logic first)
-    <li>.env file to environmental variables securely (API keys, database connections etc...)
+    <li>.env file to save environmental variables securely (API keys, database connections etc...)
   </ul>
   
 <h4>Problems Encountered</h4>
