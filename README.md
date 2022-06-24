@@ -16,6 +16,9 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>Redux createStore() for using global state/variables
     <li>Reducers: Function that accepts the state, action and executes based off of action.type (usually by switch statement); state must have an initial value
     <li>Action Creators: Functions that return actions; actions are objects with "type" property and a payload
+    <li>SVGBackgrounds
+    <li>useSelector Hook: Get the state from redux store
+    <li>useEffect Hook: Tell component to do something after item in dependency array changes
   </ul>
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
