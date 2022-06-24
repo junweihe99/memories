@@ -22,6 +22,8 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>New Function: API -> Actions -> Reducers (Handle backend logic first)
     <li>Material UI responsive properties (xs, sm etc.. & theme.breakpoints in css)
     <li>Reduce errors and make application more scalable by creating constants for action types
+    <li>React-Router-DOM to make application multi-page (BrowserRouter, Switch, Route)
+    <li>Google Login Authentication using Google Cloud developers Client ID
   </ul>
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
