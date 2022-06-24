@@ -20,11 +20,14 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>useSelector Hook: Get the state from redux store
     <li>useEffect Hook: Tell component to do something after item in dependency array changes
     <li>New Function: API -> Actions -> Reducers (Handle backend logic first)
+    <li>Material UI responsive properties (xs, sm etc.. & theme.breakpoints in css)
+    <li>Reduce errors and make application more scalable by creating constants for action types
   </ul>
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
     <li>Folder structure for cleaner and more scalable application
     <li>New Function: Routes -> Controller (Handle backend logic first)
+    <li>.env file to environmental variables securely (API keys, database connections etc...)
   </ul>
   
 <h4>Problems Encountered</h4>
