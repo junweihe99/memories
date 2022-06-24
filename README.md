@@ -9,8 +9,17 @@ Memories will be a full-stack social media application developed using the MERN 
   </ul>
 
 <h4>Lessons Learned</h4>
-  <ul>
+  <ul> Client
+    <li>Folder structure for cleaner and more scalable application
+    <li>React material-ui/core elements
+    <li>Using Axios to make API calls
+    <li>Redux createStore() for using global state/variables
+    <li>Reducers: Function that accepts the state, action and executes based off of action.type (usually by switch statement); state must have an initial value
+    <li>Action Creators: Functions that return actions; actions are objects with "type" property and a payload
+  </ul>
+  <ul> Server
     <li>import syntax by using "type": "module" in package.json
+    <li>Folder structure for cleaner and more scalable application
   </ul>
   
 <h4>Problems Encountered</h4>
