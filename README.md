@@ -19,10 +19,12 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>SVGBackgrounds
     <li>useSelector Hook: Get the state from redux store
     <li>useEffect Hook: Tell component to do something after item in dependency array changes
+    <li>New Function: API -> Actions -> Reducers (Handle backend logic first)
   </ul>
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
     <li>Folder structure for cleaner and more scalable application
+    <li>New Function: Routes -> Controller (Handle backend logic first)
   </ul>
   
 <h4>Problems Encountered</h4>
