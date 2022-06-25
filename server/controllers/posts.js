@@ -16,7 +16,7 @@ export const createPost = async (req,res) => {
     //get post info from request (frontend forms)
     const post = req.body;
     //Create new model using info from the forms
-    const newPost = new PostMessage(post);
+    const newPost = new PostMessage( {...post, creator: req.userId, createdAt: new Date().toISOString() });
     try{
         //Save the new post in the database
         await newPost.save();
@@ -53,11 +53,26 @@ export const deletePost = async (req,res) => {
 export const likePost = async (req,res) => {
     //Get id from request and rename param as _id
     const { id: _id } = req.params;
+
+    //Check if user authenticated
+    if(!req.userId) {
+        return res.json({ message: "Unauthenticated" });
+    }
+
     //Check if id is valid
     if(!mongoose.Types.ObjectId.isValid(_id)) {
         return res.status(404).send('No post with that id');
     }
+    //Find user
     const post = await PostMessage.findById(_id);
-    const updatedPost = await PostMessage.findByIdAndUpdate(_id, { likeCount: post.likeCount + 1 }, { new: true });
+    //Toggle behavior between like and dislike post
+    const index = post.likes.findIndex((id) => id===String(req.userId));
+    if(index===-1){
+        post.likes.push(req.userId);
+    } else {
+        post.likes = post.likes.filter((id) => id!== String(req.userId));
+    }
+
+    const updatedPost = await PostMessage.findByIdAndUpdate(_id, post, { new: true });
     res.json(updatedPost);
 }

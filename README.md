@@ -32,6 +32,8 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>Folder structure for cleaner and more scalable application
     <li>New Function: Routes -> Controller (Handle backend logic first)
     <li>.env file to save environmental variables securely (API keys, database connections etc...)
+    <li>Bcrypt for securely storing passwords
+    <li>JWT for storing login session
   </ul>
   
 <h4>Problems Encountered</h4>

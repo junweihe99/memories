@@ -11,6 +11,7 @@ import dotenv from 'dotenv';
 
 //Import routes
 import postRoutes from './routes/posts.js';
+import userRoutes from './routes/users.js';
 
 //Initialize express
 const app = express();
@@ -24,6 +25,7 @@ app.use(cors());
 
 //Connect router: starting path + extensions
 app.use('/posts', postRoutes);
+app.use('/user', userRoutes);
 
 //Connect to MongoDB cloud atlas database
 const PORT = process.env.PORT || 5000;
