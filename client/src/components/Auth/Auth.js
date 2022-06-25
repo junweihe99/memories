@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core';
 import { GoogleLogin } from 'react-google-login';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import useStyles from './styles';
 import Input from './Input';
@@ -10,6 +12,8 @@ export default function Auth() {
   const classes = useStyles();
   const [showPassword, setShowPassword] = useState(false);
   const [isSignup, setIsSignup] = useState(false);
+  const dispatch = useDispatch();
+  const history = useHistory();
 
   const handleSubmit = () => {
 
@@ -29,7 +33,16 @@ export default function Auth() {
   };
 
   const googleSuccess = async (res) => {
-    console.log(res);
+    const result = res?.profileObj;
+    const token = res?.tokenId;
+
+    try {
+      dispatch({ type: 'AUTH', data: { result, token } });
+      //redirect back to homepage
+      history.push('/');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const googleFailure = (error) => {
@@ -60,7 +73,7 @@ export default function Auth() {
             {isSignup ? 'Sign Up' : 'Sign In'}
           </Button>
           <GoogleLogin 
-            clientId="170160740970-4ecf27qt9vk2v66j2rce6kos78olog1f.apps.googleusercontent.com"
+            clientId="170160740970-3j3rokr7mjaca3mgcbo5cfvbe4319qqi.apps.googleusercontent.com"
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained" >
                 Google Sign In

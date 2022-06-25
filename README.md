@@ -24,6 +24,8 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>Reduce errors and make application more scalable by creating constants for action types
     <li>React-Router-DOM to make application multi-page (BrowserRouter, Switch, Route)
     <li>Google Login Authentication using Google Cloud developers Client ID
+    <li>Optional Chaining Operator (?.)
+    <li>Local Storage to save login session
   </ul>
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
@@ -34,7 +36,8 @@ Memories will be a full-stack social media application developed using the MERN 
   
 <h4>Problems Encountered</h4>
   <ul>
-    <li> npm start error: problem with dependency tree -> fixed via SKIP_PREFLIGHT_CHECK=true in .env file
+    <li>npm start error: problem with dependency tree -> fixed via SKIP_PREFLIGHT_CHECK=true in .env file
+    <li>Google Authentication Error: 'popup_closed_by_user' -> tried allowing pop-ups and clearing cache (still doesn't work)
   </ul>
 
 <h4>Improvements to Add</h4>
