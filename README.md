@@ -31,6 +31,7 @@ Memories will be a full-stack social media application developed using the MERN 
     <li>Pagination feature with material-ui/lab
     <li>'i' flag to ignore case (Ex: Test = test = TEST)
   </ul>
+  
   <ul> Server
     <li>import syntax by using "type": "module" in package.json
     <li>Folder structure for cleaner and more scalable application
