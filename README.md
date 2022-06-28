@@ -45,6 +45,7 @@ Memories will be a full-stack social media application developed using the MERN 
   <ul>
     <li>npm start error: problem with dependency tree -> fixed via SKIP_PREFLIGHT_CHECK=true in .env file
     <li>Google Authentication Error: 'popup_closed_by_user' -> tried allowing pop-ups and clearing cache (still doesn't work)
+    <li>Server deployment on Heroku Error: File builds but still shows an error (still doesn't work)
   </ul>
 
 <h4>Improvements to Add</h4>
