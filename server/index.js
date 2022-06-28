@@ -27,6 +27,10 @@ app.use(cors());
 app.use('/posts', postRoutes);
 app.use('/user', userRoutes);
 
+app.get('/', (req,res) => {
+    res.send('APP IS RUNNING.');
+});
+
 //Connect to MongoDB cloud atlas database
 const PORT = process.env.PORT || 5000;
 mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
