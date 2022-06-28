@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //URL pointing to backend route
-const API = axios.create({ baseURL: 'https://rendezvousmemories.herokuapp.com/' });
+const API = axios.create({ baseURL: 'http://localhost:3000' });
 
 //Check authentication
 API.interceptors.request.use((req) => {
