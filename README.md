@@ -48,7 +48,8 @@ Memories will be a full-stack social media application developed using the MERN 
 
 <h4>Improvements to Add</h4>
   <ul>
-    <li>Empty search results in no posts screen
+    <li>Empty search results in no posts screen -> Added styling for screen with no search matches
+    <li>Fix Google Authentication function (WIP)
   </ul>
 
 <h4>Credits</h4>

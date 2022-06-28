@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, CircularProgress } from '@material-ui/core';
+import { Grid, CircularProgress, Typography, Card } from '@material-ui/core';
 import { useSelector } from 'react-redux';
 import Post from './Post/Post';
 import useStyles from './styles';
@@ -10,7 +10,11 @@ export default function Posts({ setCurrentId }) {
   const classes = useStyles();
 
   if(!posts.length && !isLoading) {
-    return 'No Posts';
+    return (
+      <Card raised elevation={6} >
+        <Typography variant="h6" align="center">No posts matching search</Typography>
+      </Card>
+    )
   }
   
   return (
